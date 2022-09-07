@@ -4,3 +4,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COMMON */
+html{
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex-container{
+    display: flex;
+}
+
+/* HEADER */
+header{
+    background-color: #FF6900;
+}
+
+header .flex-container{
+    align-items: center;
+    padding: 1em 0;
+}
+
+.header-section,
+.header-command{
+    width: 25%;
+
+    /* DEBUG */
+    border: 1px solid black;
+}
+
+.header-logo{
+    width: 50%;
+
+    /* DEBUG */
+    border: 1px solid black;
+}
