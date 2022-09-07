@@ -25,13 +25,28 @@ img{
     display: block;
 }
 
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 /* UTILITIES CARD */
 .heart,
 .discount,
 .bearableness{
-    display: inline-block;
-    position: absolute;
     padding: .1em .3em;
+}
+
+.heart{
+    position: absolute;
 }
 
 .heart{
@@ -45,17 +60,21 @@ img{
     color: red;
 }
 
-.discount{
-    background-color: red;
+.tag{
+    position: absolute;
     bottom: 1.5em;
     left: 0;
 }
+.discount{
+    background-color: red;
+    color: white;
+}
 
 .bearableness{
+    color: white;
     background-color: green;
-    bottom: 1.5em;
-    left: 3.5em;
 }
+
 
 .discounted-price{
     color: red;
@@ -73,23 +92,39 @@ header{
 }
 
 header .flex-container{
-    align-items: center;
+    color: white;
     padding: 1em 0;
 }
 
 .header-section,
 .header-command{
     width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    /* DEBUG */
-    border: 1px solid black;
+.header-section li{
+    padding: .3em;
+}
+
+.header-command{
+    justify-content: flex-end;
+}
+
+.header-command i{
+    padding: .5em;
 }
 
 .header-logo{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    /* DEBUG */
-    border: 1px solid black;
+.header-logo img{
+    width: 40%;
 }
 
 /* MAIN */
@@ -97,19 +132,12 @@ main .flex-container{
     padding: 2em 0;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    /* DEBUG */
-    border: 1px solid black;
-    background-color: lightgreen;
 }
 
 /* Card */
 .card{
     width: calc(100% / 3 - 1em);
     margin: 1em 0;
-
-    /* DEBUG */
-    border: 1px solid black;
 }
 
 /* Top Card */
@@ -117,10 +145,6 @@ main .flex-container{
     width: 100%;
     font-size: 1rem;
     position: relative;
-
-    /* DEBUG */
-    border: 1px solid black;
-    background-color: violet;
 }
 
 .top-card .hover-img{
@@ -140,10 +164,7 @@ main .flex-container{
 /* Bottom Card */
 .bottom-card{
     width: 100%;
-    
-    /* DEBUG */
-    border: 1px solid black;
-    background-color: lightblue;
+    margin-top: .5em;
 }
 
 /* FOOTER */
@@ -154,6 +175,7 @@ footer{
 footer .flex-container{
     justify-content: space-between;
     padding: 1em 0;
+
     /* DEBUG */
     background-color: lightblue;
 }
