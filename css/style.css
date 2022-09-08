@@ -107,8 +107,11 @@ header .flex-container{
 .header-command{
     width: 25%;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.header-section{
+    justify-content: flex-start;
 }
 
 .header-section li{
